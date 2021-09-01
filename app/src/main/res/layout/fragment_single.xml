@@ -15,12 +15,20 @@
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:text="Loading ...."
         android:textSize="16sp"
         android:layout_marginTop="24dp"
         android:textColor="#333333"
         android:gravity="center_horizontal"
         android:id="@+id/tvResult"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="24dp"
+        android:text="Cancel"
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
 </LinearLayout>
