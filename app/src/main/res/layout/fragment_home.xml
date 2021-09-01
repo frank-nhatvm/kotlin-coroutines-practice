@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:text="Single Request"
+        android:id="@+id/btnSingle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+     <Button
+         android:layout_marginTop="16dp"
+        android:text="Multiple Request Sequential"
+        android:id="@+id/btnSequentital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+     <Button
+         android:layout_marginTop="16dp"
+        android:text="Multiple Request Cocurrency"
+        android:id="@+id/btnConcurency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
