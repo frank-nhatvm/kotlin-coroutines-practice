@@ -5,7 +5,7 @@ import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
 
-class FakeRepository(private  val dispatcher: CoroutineDispatcher) {
+class FakeRepository(private val dispatcher: CoroutineDispatcher) {
 
     suspend fun requestWithIndex(index: Int, isThrowException: Boolean = false): Int =
         withContext(dispatcher) {
@@ -15,8 +15,16 @@ class FakeRepository(private  val dispatcher: CoroutineDispatcher) {
             if (isThrowException) {
                 throw Exception("Exception with index $index")
             }
-            Logger.log("Done with index $index")
+            Logger.log("Done with index $index  at ${System.currentTimeMillis()}")
             index
         }
 
+    suspend fun saveToDb(index: Int) = withContext(dispatcher){
+        Logger.log("Saving to db: $index")
+        val delayTime = index * 1000L
+        delay(delayTime)
+        Logger.log("save to db success : $index")
+    }
+
 }
+
