@@ -26,6 +26,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
+    <Button
+         android:layout_marginTop="16dp"
+        android:text="Fail And Retry"
+        android:id="@+id/btnFailAndRetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+         android:layout_marginTop="16dp"
+        android:text="Non Cancellable"
+        android:id="@+id/btnNonCancellable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
 
 
 </LinearLayout>

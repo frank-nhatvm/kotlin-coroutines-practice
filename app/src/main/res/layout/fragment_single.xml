@@ -23,4 +23,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <ProgressBar
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/prbLoading"
+        android:visibility="gone"
+        android:layout_width="36dp"
+        android:layout_height="36dp"/>
+
 </LinearLayout>

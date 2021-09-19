@@ -10,7 +10,7 @@
         android:layout_marginTop="24dp"
         android:textColor="#333333"
         android:gravity="center_horizontal"
-        android:text="Multiple Request Sequential"
+        android:text="Fail And Retry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -19,19 +19,9 @@
         android:layout_marginTop="24dp"
         android:textColor="#333333"
         android:gravity="center_horizontal"
-        android:id="@+id/tvResult1"
+        android:id="@+id/tvResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
-    <TextView
-        android:textSize="16sp"
-        android:layout_marginTop="24dp"
-        android:textColor="#333333"
-        android:gravity="center_horizontal"
-        android:id="@+id/tvResult2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
 
     <ProgressBar
         android:layout_gravity="center"

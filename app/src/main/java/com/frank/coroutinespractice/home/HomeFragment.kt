@@ -9,6 +9,8 @@ import androidx.fragment.app.Fragment
 import com.frank.coroutinespractice.R
 import com.frank.coroutinespractice.multiplerequest.cocurrency.ConcurrencyFragment
 import com.frank.coroutinespractice.multiplerequest.sequential.SequentialFragment
+import com.frank.coroutinespractice.noncancellable.NonCancellableFragment
+import com.frank.coroutinespractice.retryfail.FailAndRetryFragment
 import com.frank.coroutinespractice.singlerequest.SingleFragment
 
 class HomeFragment : Fragment() {
@@ -30,6 +32,14 @@ class HomeFragment : Fragment() {
 
         rootView.findViewById<Button>(R.id.btnConcurency).setOnClickListener {
             openScreen(ConcurrencyFragment())
+        }
+
+        rootView.findViewById<Button>(R.id.btnFailAndRetry).setOnClickListener {
+            openScreen(FailAndRetryFragment())
+        }
+
+        rootView.findViewById<Button>(R.id.btnNonCancellable).setOnClickListener {
+            openScreen(NonCancellableFragment())
         }
 
 

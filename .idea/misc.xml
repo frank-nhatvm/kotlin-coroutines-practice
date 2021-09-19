@@ -4,10 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3453125" />
-        <entry key="app/src/main/res/layout/fragment_concurrency.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/layout/fragment_concurrency.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_fail_and_retry.xml" value="0.3528205128205128" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.36041666666666666" />
-        <entry key="app/src/main/res/layout/fragment_sequential.xml" value="0.36041666666666666" />
-        <entry key="app/src/main/res/layout/fragment_single.xml" value="0.36041666666666666" />
+        <entry key="app/src/main/res/layout/fragment_noncancellable.xml" value="0.3528205128205128" />
+        <entry key="app/src/main/res/layout/fragment_sequential.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_single.xml" value="0.22" />
       </map>
     </option>
   </component>

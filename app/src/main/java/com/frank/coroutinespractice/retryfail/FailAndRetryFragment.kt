@@ -1,4 +1,4 @@
-package com.frank.coroutinespractice.singlerequest
+package com.frank.coroutinespractice.retryfail
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,16 +10,16 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.frank.coroutinespractice.R
 
-class SingleFragment :Fragment() {
+class FailAndRetryFragment : Fragment() {
 
     private lateinit var tvResult: TextView
     private lateinit var prbLoading: ProgressBar
 
-    private val viewModel: SingleViewModel by viewModels()
+    private val failAndRetryViewModel: FailAndRetryViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewModel.fetchData()
+        failAndRetryViewModel.fetchData()
     }
 
     override fun onCreateView(
@@ -27,18 +27,18 @@ class SingleFragment :Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val rootView = inflater.inflate(R.layout.fragment_single,null,false)
+        val rootView = inflater.inflate(R.layout.fragment_fail_and_retry,null,false)
 
         tvResult = rootView.findViewById(R.id.tvResult)
         prbLoading = rootView.findViewById(R.id.prbLoading)
 
-        viewModel.data.observe(viewLifecycleOwner,{
-            data ->
+        failAndRetryViewModel.data.observe(viewLifecycleOwner,{
+                data ->
             tvResult.text = "Data: $data"
         })
 
-        viewModel.isShowLoading.observe(viewLifecycleOwner,{
-            isShow ->
+        failAndRetryViewModel.isShowLoading.observe(viewLifecycleOwner,{
+                isShow ->
             prbLoading.visibility = if(isShow) View.VISIBLE else View.GONE
         })
 
